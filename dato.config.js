@@ -2,7 +2,7 @@ const by = require('sort-by');
 const ellipsize = require('ellipsize');
 
 module.exports = (dato, root, i18n) => {
-  const navData = dato.homepage.logo
+  const navData = dato.homepage.logo.url();
   root.createDataFile("data/navbar.toml", 'toml', navData)
 
   root.directory("content", (dir) => {
