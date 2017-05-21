@@ -8,14 +8,14 @@ module.exports = (dato, root, i18n) => {
   root.directory("content", (dir) => {
     const about = dato.aboutPage;
 
-    // dir.createPost("about.html", "toml", {
-    //   frontmatter:  {
-    //     type:'about',
-    //     historia: about.historia,
-    //     title: about.title,
-    //   },
-    //   content: about.content,
-    // });
+    dir.createPost("about.html", "toml", {
+      frontmatter:  {
+        type:'about',
+        historia: about.historia,
+        title: about.title,
+      },
+      content: about.content,
+    });
 
 
     // ...iterate over the "Blog post" records...
