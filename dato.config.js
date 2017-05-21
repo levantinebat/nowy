@@ -25,6 +25,7 @@ module.exports = (dato, root, i18n) => {
     const about = dato.aboutPage;
     dir.createPost("about.html", "toml", {
       frontmatter:  {
+        type:'about',
         historia: about.historia,
         title: about.title,
       },
