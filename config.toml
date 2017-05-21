@@ -1,10 +1,13 @@
-baseurl = "/"
-# https://datocms-hugo-example.netlify.com/
-languageCode = "en-us"
+languageCode = "pl-PL"
+title = "LoggerMTS transport międzynarodowy"
+baseURL = "/"
+theme= "zafta"
+ignoreFiles = [".scss"]
+canonifyURL = false
 
-[taxonomies]
-season = "seasons"
-
-# datocms:start
-title = "Dundler Mifflin"
-# datocms:end
+[params]
+description ="Najpewniejszy międzynarodowy transport ładunków lądowych, fracht i spedycja tylko z LoggerMTS z siedzibą w Raciborzu"
+author="DK Commerce & Dealings"
+GACode = 'UA-99260209-1'
+company_name = "LoggerMTS"
+home= "tak"
