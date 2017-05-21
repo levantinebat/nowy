@@ -11,3 +11,21 @@ author="DK Commerce & Dealings"
 GACode = 'UA-99260209-1'
 company_name = "LoggerMTS"
 home= "tak"
+
+[[menu.main]]
+    name = "O nas"
+    weight = -110
+    identifier = "about"
+    url = "about"
+[[menu.main]]
+    name = "Oferta"
+    weight = -100
+    url = "/getting-started/"
+[[menu.main]]
+    name = "Flota"
+    weight = -90
+    url = "about/#fleet"
+[[menu.main]]
+    name = "Kontakt"
+    weight = -80
+    url = "kontakt"

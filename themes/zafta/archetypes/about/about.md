@@ -6,7 +6,6 @@ cta_text = "Poznałeś już naszą firmę. Dowiedz się co możemy Ci zaoferowa�
 cta_btn_text = "Zobacz!"
 cta_direction = "oferta"
 [menu]
-[menu.main]
-name = "Kontakt"
-weight = 6
-+++
+  [menu.main]
+    weight= -20
+++++++

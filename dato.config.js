@@ -4,6 +4,13 @@ const ellipsize = require('ellipsize');
 module.exports = (dato, root, i18n) => {
   const navData = { url: dato.homepage.logo.url()}
   root.createDataFile("data/navbar.toml", 'toml', navData)
+  const heroData = {
+    first: dato.heroCopy.first,
+    second: dato.heroCopy.second,
+    third: dato.heroCopy.third,
+  }
+  root.createDataFile("data/copy.toml", 'toml', heroData)
+
 
   root.directory("content", (dir) => {
     const about = dato.aboutPage;
@@ -13,6 +20,7 @@ module.exports = (dato, root, i18n) => {
         type:'about',
         historia: about.historia,
         title: about.title,
+        body_id: "kim-jestesmy",        
       },
       content: about.content,
     });
