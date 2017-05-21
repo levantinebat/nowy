@@ -1,0 +1,26 @@
+{
+  "name": "hugo-example",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "slug": "^0.9.1",
+    "datocms-client": "^0.3.23",
+    "sort-by": "^1.2.0",
+    "ellipsize": "^0.0.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/levantinebat/nowy.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/levantinebat/nowy/issues"
+  },
+  "homepage": "https://github.com/levantinebat/nowy#readme"
+}
