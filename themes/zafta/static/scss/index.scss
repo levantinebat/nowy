@@ -1,7 +1,7 @@
 #index{
   background: lighten($black,5%);
   min-width: 100%;
-  $hero-height:700px;
+  $hero-height:900px;
   #hero-header{
     margin-top: 88px;
     overflow: hidden;
@@ -13,47 +13,47 @@
 
   }
 
-  @mixin hero-left-bg {
-    background: $black;
-
-  }
+  // @mixin hero-left-bg {
+  //   background: $black;
+  //
+  // }
   $container-width:450px;
   #hero-text-container{
     font-size: 1.04em;
     margin-top: -10px;
-    float: right;
-    right: 0;
-    position: absolute;
-    height: $hero-height;
+    float: left;
+    // right: 0;
+    // position: absolute;
+    // height: $hero-height;
     width:   $container-width;
     z-index: -1;
-    @include hero-left-bg;
+    // @include hero-left-bg;
 
   }
   #hero-text-skew{
-    height: $hero-height;
-    transform: skew(22.5deg);
+    // height: $hero-height;
+    // transform: skew(22.5deg);
     padding-left: 90px;
-    right: 110px;
-    position: absolute;
+    // right: 110px;
+    // position: absolute;
     width:   $container-width;
 
-    @include hero-left-bg;
+    // @include hero-left-bg;
 
     }
+  $margin-left:13px;
   #hero-text{
     margin-top: 40px;
     text-transform: uppercase;
-    transform: skew(-22.5deg);
+    // transform: skew(-22.5deg);
     font-weight: 800;
     font-size: 0.95em;
 
-    $copy-right-pos:13px;
     span{
       color: $white;
       &:nth-last-child(2){
         margin-top:0;
-        right: $copy-right-pos;
+        margin-left: $margin-left;
         font-size: 3.5em;
         margin-bottom: 0;
         letter-spacing: 11px;
@@ -68,18 +68,18 @@
 
       &:nth-last-child(3){
         margin-top: 15px;
-        right: $copy-right-pos;
+        margin-left: $margin-left;
         font-size: 3em;
         letter-spacing: 8px;
       }
       &:nth-last-child(1){
         color: lighten($color1,10%);
         margin-top: -20px;
-        right: $copy-right-pos + 10px;
+        margin-left: $margin-left;
         font-size:3.8em;
         letter-spacing: 11px;
         @media only screen and (max-width:992px){
-          right: $copy-right-pos;
+          right: $margin-left;
         }
       }
     }
@@ -88,6 +88,29 @@
         margin-top: 250px;
       }
     }
+
+    #hero-btn{
+      font-size: 1.1em;
+      color: $grey-light;
+      background: $color1;
+      width: 200px;
+      z-index: 1000;
+      padding: 10px;
+      border: none;
+      margin-top:   $hero-height / 12;
+      margin-left: $margin-left * 10;
+      @include transition-all(0.4s);
+
+
+      &:hover{
+        color: $color1;
+        background: $grey-light;
+        letter-spacing: 4px;
+        border: none;
+        @include transition-all(0.4s);
+      }
+    }
+
   // #hero-text-mask{
   //   position: absolute;
   //   height: 100%;
@@ -95,38 +118,18 @@
   //   margin-left: -20px;
   //   @include BgBlur2(0.2);
   // }
-  #hero-btn{
-    font-size: 1.1em;
-    position: absolute;
-    bottom: 385px;
-    color: $grey-light;
-    right: 270px;
-    background: $color1;
-    width: 200px;
-    z-index: 1000;
-    padding: 10px;
-    border: none;
-    @include transition-all(0.4s);
 
-
-    &:hover{
-      color: $color1;
-      background: $grey-light;
-      letter-spacing: 4px;
-      border: none;
-      @include transition-all(0.4s);
-    }
-  }
 // ----------
 // right side end
 // ----------
   #hero-vid-container{
     margin-top: -10px;
+    position: absolute;
     height: $hero-height;
     z-index: -2;
-    background-size: cover;
-    background-position: center 60%;
-    background-image: url(img/logger_header.jpg);
+    width: 100%;
+    overflow: hidden;
+    padding: 0;
   }
   #hero-vid-mask{
     left: 0;
