@@ -1,5 +1,5 @@
 languageCode = "pl-PL"
-title = "LoggerMTS transport międzynarodowy"
+title = "Tworkowski Transport"
 baseURL = "/"
 theme= "zafta"
 ignoreFiles = [".scss"]
@@ -8,8 +8,8 @@ canonifyURL = false
 [params]
 description ="Najpewniejszy międzynarodowy transport ładunków lądowych, fracht i spedycja tylko z LoggerMTS z siedzibą w Raciborzu"
 author="DK Commerce & Dealings"
-GACode = 'UA-99260209-1'
-company_name = "LoggerMTS"
+GACode = '11'
+company_name = "Tworkowski"
 home= "tak"
 
 [[menu.main]]
@@ -21,10 +21,6 @@ home= "tak"
     name = "Oferta"
     weight = -100
     url = "/getting-started/"
-[[menu.main]]
-    name = "Flota"
-    weight = -90
-    url = "about/#fleet"
 [[menu.main]]
     name = "Kontakt"
     weight = -80

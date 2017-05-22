@@ -16,7 +16,7 @@ var gulp = require('gulp'),
 //////////
 
 gulp.task('scripts', function(){
-    gulp.src(['../../static/js/**/*.js', '!../../static/js/**/*.min.js', '!../../static/js/**/dropzone.js' ])
+    gulp.src(['../../static/js/**/*.js', '!../../static/js/**/*.min.js' ])
     .pipe(plumber())
     .pipe(rename({suffix: '.min'}))
     .pipe(uglify())

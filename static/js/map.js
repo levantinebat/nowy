@@ -21,7 +21,7 @@ function initMap() {
       "stylers":[{"lightness":50},{"color":"#a92a31"}]},
       {"featureType":"road","elementType":"labels.text.fill",
       "stylers":[{"color":"#000000"}]},
-      {"featureType":"road.arterial","elementType":"labels.icon",
+      {"featureType":"road.arterial","elementType":"labels.icon", 
       "stylers":[{"visibility":"off"}]},
       {"featureType":"transit","elementType":"all",
       "stylers":[{"visibility":"off"}]},

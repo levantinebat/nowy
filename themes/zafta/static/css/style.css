@@ -6581,11 +6581,15 @@ footer .footer-links a {
   padding: 0;
   overflow: hidden;
 }
+#index #features img {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  padding-bottom: 44px;
+  z-index: -5;
+}
 #index #features #about-us-features {
   height: 350px;
-  background-image: url(img/spedycja.jpg);
-  background-size: cover;
-  background-position: center;
   width: 100%;
   margin: 0;
   padding: 0;
@@ -6643,7 +6647,6 @@ footer .footer-links a {
   padding: 0;
   float: right;
   height: 575px;
-  background-image: url(img/oferta_przewozowa.png);
   -webkit-transform: scaleX(-1);
           transform: scaleX(-1);
   background-size: cover;
@@ -6693,9 +6696,6 @@ footer .footer-links a {
   height: 525px;
   font-size: 0.9em;
   margin: 0;
-  background-image: url(img/skontaktuj_sie.jpg);
-  background-size: cover;
-  background-position: center;
   float: right;
   padding: 0;
 }
@@ -6716,9 +6716,6 @@ footer .footer-links a {
 #index #features #apply-features {
   height: 350px;
   margin: 0;
-  background-image: url(img/srodek_samochodu.jpg);
-  background-size: cover;
-  background-position: center;
   padding: 0;
 }
 #index #features {

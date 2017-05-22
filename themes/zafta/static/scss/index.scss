@@ -160,11 +160,18 @@
       padding: 0;
       overflow: hidden;
     }
+    img{
+      height: 100%;
+      width: 100%;
+      position: absolute;
+      padding-bottom: 44px;
+      z-index: -5;
+    }
     #about-us-features{
       height: $about-features-height;
-      background-image: url(img/spedycja.jpg);
-      background-size: cover;
-      background-position: center;
+      // background-image: url(img/spedycja.jpg);
+      // background-size: cover;
+      // background-position: center;
       width: 100%;
       margin: 0;
       padding: 0;
@@ -223,7 +230,7 @@
       padding: 0;
       float: right;
       height: ($about-features-height *1.5) +50px;
-      background-image: url(img/oferta_przewozowa.png);
+      // background-image: url(img/oferta_przewozowa.png);
       transform: scaleX(-1);
       background-size: cover;
       background-repeat: no-repeat;
@@ -279,9 +286,9 @@
       height: $about-features-height *1.5;
       font-size: 0.9em;
       margin:0;
-      background-image: url(img/skontaktuj_sie.jpg);
-      background-size: cover;
-      background-position: center;
+      // background-image: url(img/skontaktuj_sie.jpg);
+      // background-size: cover;
+      // background-position: center;
       float: right;
       padding: 0;
       h1, p{
@@ -304,9 +311,9 @@
     #apply-features{
       height: $about-features-height;
       margin:0;
-      background-image: url(img/srodek_samochodu.jpg);
-      background-size: cover;
-      background-position: center;
+      // background-image: url(img/srodek_samochodu.jpg);
+      // background-size: cover;
+      // background-position: center;
       padding: 0;
     }
 
